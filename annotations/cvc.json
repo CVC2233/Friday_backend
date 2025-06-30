@@ -1,0 +1,512 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>\nYou need to complete a \"shopping\" task in the \"meituan\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions by performing a series of actions, and ensure that the specifications are: \".\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(468, 250)"
+            }
+        ],
+        "images": [
+            "imgs_all/0f7b2d41-cafd-40be-adf6-b5d9ce8f3a28.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>\nYou need to complete a \"shopping\" task in the \"meituan\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions by performing a series of actions, and ensure that the specifications are: \".\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(468, 250)"
+            }
+        ],
+        "images": [
+            "imgs_all/fc0bb721-2978-4e40-a27b-202f8f0fe068.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>\nYou need to complete a \"shopping\" task in the \"meituan\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions by performing a series of actions, and ensure that the specifications are: \".\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(468, 250)"
+            }
+        ],
+        "images": [
+            "imgs_all/091b81ab-227f-404b-be59-0b134965c725.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>\nYou need to complete a \"shopping\" task in the \"meituan\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions by performing a series of actions, and ensure that the specifications are: \".\n"
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(468, 250)"
+            }
+        ],
+        "images": [
+            "imgs_all/4b88fc9a-dbd0-4efa-91ff-d72fac1cd7aa.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/e62700e6-dacb-4b73-a132-11c33b42ac51.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/af37ca3d-68bf-4b8f-9711-00521785989f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/3141a665-31d7-4639-a3d1-e2acdf970a8c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/1d915166-a19f-4b5d-a485-829a654fcc9f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/5df85dbf-15c2-4b7a-9031-a8fb88ab87cf.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/2dbb8fc6-cb3b-4382-88e3-c57f0d9bb267.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/3b0cd273-7884-4f41-9d9b-692f08180efe.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/d531539f-4285-41d8-8d4b-55f19fdb3de9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/cbec104c-ab16-4f98-9b75-ff91c24504b6.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试\")"
+            }
+        ],
+        "images": [
+            "imgs_all/c7c0eb2a-b596-48b6-b3f2-9e82adc172fe.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试1111\")"
+            }
+        ],
+        "images": [
+            "imgs_all/e8938c34-c43d-4eba-8161-783b4542b8ae.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试1111\")"
+            }
+        ],
+        "images": [
+            "imgs_all/65bf15c0-8803-414a-8780-4f0619bdab2d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"测试22222\")"
+            }
+        ],
+        "images": [
+            "imgs_all/5bad0f48-ab16-4223-a965-ee14781795fa.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(468, 250)"
+            }
+        ],
+        "images": [
+            "imgs_all/3e843215-dcf9-4e6c-9788-0db2617891c4.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"多肉葡萄\")"
+            }
+        ],
+        "images": [
+            "imgs_all/2fe7df0b-ba5e-497d-b60f-9fa49434c79b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(658, 279)"
+            }
+        ],
+        "images": [
+            "imgs_all/bc213367-a6b5-43b7-bcdc-691d23d2f662.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(376, 982)"
+            }
+        ],
+        "images": [
+            "imgs_all/b4f2c4db-0f7c-46f9-955f-6b90fb387f8b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(798, 654)"
+            }
+        ],
+        "images": [
+            "imgs_all/fcbcebff-e4aa-4d6f-b9f2-b6f3cf2115a7.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(950, 1075)"
+            }
+        ],
+        "images": [
+            "imgs_all/e430c5c9-775e-4bec-bb1d-d08921d4a613.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(950, 1075)"
+            }
+        ],
+        "images": [
+            "imgs_all/5150be91-020e-493c-9e62-09f38c4afde9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(876, 1841)"
+            }
+        ],
+        "images": [
+            "imgs_all/6efcc080-8838-4c09-8548-a861a4f9db85.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(533, 2040)"
+            }
+        ],
+        "images": [
+            "imgs_all/80284cb7-6ee9-48e0-98dd-822c74089aba.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(110, 2236)"
+            }
+        ],
+        "images": [
+            "imgs_all/cf855065-2e10-49f6-b8d0-e377bf9cf080.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe(907, 1747, \"up\", \"short\")"
+            }
+        ],
+        "images": [
+            "imgs_all/90ecd351-148b-4c2e-a092-b80b13547859.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe(907, 1747, \"up\", \"short\")"
+            }
+        ],
+        "images": [
+            "imgs_all/f1b385a5-f8cd-46e1-b959-aabc7c8a315e.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(1012, 1248)"
+            }
+        ],
+        "images": [
+            "imgs_all/a35c6807-3c12-44d1-bc02-3ad755e2f344.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(931, 1081)"
+            }
+        ],
+        "images": [
+            "imgs_all/e520f6b1-4921-4459-a113-fe2b193b166c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe(871, 1277, \"up\", \"medium\")"
+            }
+        ],
+        "images": [
+            "imgs_all/a11478c0-df29-4b7e-9097-7af75e711833.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(547, 2050)"
+            }
+        ],
+        "images": [
+            "imgs_all/b4e534c5-81fc-4a00-a99e-2168ca216b8b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(102, 2241)"
+            }
+        ],
+        "images": [
+            "imgs_all/721ba8c8-2d08-42fd-a950-d9e1e3e6b56d.png"
+        ]
+    }
+]
