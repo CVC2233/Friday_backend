@@ -14,8 +14,9 @@ import requests
 import uuid
 from prompt_dispatcher import get_task_prompt
 app = Flask(__name__)
-CLOUD_DEVICE_IP_PORT = '4af63a6b'
-ADB_PATH = r"/Users/shiyibo/WorkSpace/platform-tools/adb"
+CLOUD_DEVICE_IP_PORT = '10CF151STZ0011M'
+#! adb
+ADB_PATH = r"adb"
 app_name = 'com.sankuai.meituan.takeoutnew' # 执行的应用的包名,用于开启和关闭应用
 LOG_PATH ='./app.log'
 BASE_ANNO_PATH='./annotations'
@@ -142,6 +143,7 @@ def parse_action(text):
         patterns = {
             'tap': r'tap\(\s*(\d+),\s*(\d+)\s*\)',
             'text': r'text\(\s*"([^"]*)"\s*\)',
+            'need_feedback': r'need_feedback\(\s*"([^"]*)"\s*\)',
             'long_press': r'long_press\(\s*(\d+),\s*(\d+)\s*\)',
             'swipe': r'swipe\(\s*(\d+),\s*(\d+),\s*"([^"]+)",\s*"([^"]+)"\s*\)',
             'wait': r'wait\(\s*\)',
@@ -172,6 +174,9 @@ def parse_action(text):
                     }
                 elif action_type == 'wait':
                     return {'action': 'wait'}
+                elif action_type == 'need_feedback':
+                    content = match.group(1)
+                    return {'action': 'need_feedback', 'value': content}
                 elif action_type == 'FINISH':
                     return {'action': 'FINISH'}
         return None  # 如果没有匹配到
@@ -196,7 +201,10 @@ def format_action(action_data):
     elif action_type == 'text':
         # 注意：为了和原始格式匹配，字符串值需要用双引号包裹
         operation_str = f'text("{action_data["value"]}")'
-        
+    
+    elif action_type == 'need_feedback':
+        operation_str = f'need_feedback("{action_data["value"]}")'
+    
     elif action_type == 'long_press':
         operation_str = f"long_press({action_data['x']}, {action_data['y']})"
 

@@ -1,0 +1,62 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(946, 194)"
+            }
+        ],
+        "images": [
+            "imgs_all/53ed21cb-458a-4b34-97f8-aae3f93489f2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/af807826-1c7c-40d7-aafc-e3966785c5f2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(685, 499)"
+            }
+        ],
+        "images": [
+            "imgs_all/0010e0c4-f8e6-437b-91e6-974de818e493.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"多肉葡萄\" from \"喜茶\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/b8d4b25e-f29d-44a8-8a95-71a77c15f1df.png"
+        ]
+    }
+]
