@@ -803,3 +803,33 @@
 2025-07-02 02:28:41,722 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:28:41] "POST /execute-action HTTP/1.1" 200 -
 2025-07-02 02:28:44,333 - root - INFO - 截图:./screenshots_tmp/screen_a5f02b1e-80f6-489d-b29c-dc3c19714cb6.png
 2025-07-02 02:28:44,353 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:28:44] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:36:37,003 - root - INFO - 截图:./screenshots_tmp/screen_12faae00-e8d0-4946-bf45-a033db22737a.png
+2025-07-02 02:36:37,028 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:36:37] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:36:49,501 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:36:49] "POST /infer HTTP/1.1" 200 -
+2025-07-02 02:36:53,346 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:36:53] "POST /save-annotation HTTP/1.1" 200 -
+2025-07-02 02:36:53,675 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:36:53] "POST /execute-action HTTP/1.1" 200 -
+2025-07-02 02:37:03,797 - root - INFO - 截图:./screenshots_tmp/screen_9883822b-635b-45b5-8534-456f0b29895f.png
+2025-07-02 02:37:03,813 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:37:03] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:37:07,661 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:37:07] "POST /infer HTTP/1.1" 200 -
+2025-07-02 02:37:19,285 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:37:19] "POST /save-annotation HTTP/1.1" 200 -
+2025-07-02 02:37:25,905 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:37:25] "POST /execute-action HTTP/1.1" 200 -
+2025-07-02 02:37:59,625 - root - INFO - 截图:./screenshots_tmp/screen_99bf9629-b6e9-4734-9244-64265f714a69.png
+2025-07-02 02:37:59,641 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:37:59] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:38:03,557 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:03] "POST /infer HTTP/1.1" 200 -
+2025-07-02 02:38:19,568 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:19] "POST /save-annotation HTTP/1.1" 200 -
+2025-07-02 02:38:19,880 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:19] "POST /execute-action HTTP/1.1" 200 -
+2025-07-02 02:38:20,757 - root - INFO - 截图:./screenshots_tmp/screen_c4256a73-f153-41f1-93ba-99247f41f1f3.png
+2025-07-02 02:38:20,769 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:20] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:38:26,590 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:26] "POST /save-annotation HTTP/1.1" 200 -
+2025-07-02 02:38:26,618 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:26] "POST /execute-action HTTP/1.1" 200 -
+2025-07-02 02:38:27,463 - root - INFO - 截图:./screenshots_tmp/screen_2d7c89a5-6317-4ae6-acf9-35d39d162145.png
+2025-07-02 02:38:27,482 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:27] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:38:35,957 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:35] "POST /infer HTTP/1.1" 200 -
+2025-07-02 02:38:46,378 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:46] "POST /save-annotation HTTP/1.1" 200 -
+2025-07-02 02:38:46,712 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:46] "POST /execute-action HTTP/1.1" 200 -
+2025-07-02 02:38:47,747 - root - INFO - 截图:./screenshots_tmp/screen_38928cf7-798f-432e-959e-f168697f7be9.png
+2025-07-02 02:38:47,762 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:47] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-02 02:38:51,995 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:51] "POST /save-annotation HTTP/1.1" 200 -
+2025-07-02 02:38:52,012 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:52] "POST /execute-action HTTP/1.1" 200 -
+2025-07-02 02:38:52,946 - root - INFO - 截图:./screenshots_tmp/screen_6a789981-bc47-4aae-bd9d-d90c514f50ac.png
+2025-07-02 02:38:52,961 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 02:38:52] "GET /get-screenshot HTTP/1.1" 200 -
