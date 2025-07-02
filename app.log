@@ -534,6 +534,7 @@
 2025-07-01 02:42:46,593 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:42:46] "POST /execute-action HTTP/1.1" 200 -
 2025-07-01 02:42:48,688 - root - INFO - 截图:./screenshots_tmp/screen_0108a7d7-0012-4164-8a2c-d203f7e1b034.png
 2025-07-01 02:42:48,700 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:42:48] "GET /get-screenshot HTTP/1.1" 200 -
+<<<<<<< HEAD
 2025-07-02 00:51:43,066 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5001
@@ -1131,3 +1132,24 @@
 2025-07-02 17:41:05,717 - werkzeug - INFO - 127.0.0.1 - - [02/Jul/2025 17:41:05] "POST /infer HTTP/1.1" 200 -
 2025-07-02 17:59:09,839 - werkzeug - INFO -  * Detected change in 'C:\\Jungang\\Project2025\\Friday-Dev\\Friday_backend\\friday.py', reloading
 2025-07-02 17:59:10,223 - werkzeug - INFO -  * Restarting with stat
+=======
+2025-07-01 20:28:13,160 - werkzeug - INFO -  * Detected change in '/Users/shiyibo/WorkSpace/Friday/Flywheel/Backend/friday.py', reloading
+2025-07-01 20:28:13,319 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 20:28:13,729 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 20:28:13,737 - werkzeug - INFO -  * Debugger PIN: 359-453-670
+2025-07-01 20:29:28,002 - root - INFO - 截图:./screenshots_tmp/screen_e013e86e-817f-4cc1-ac0c-a8a316a4ddd9.png
+2025-07-01 20:29:28,016 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:29:28] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-01 20:29:41,888 - root - INFO - 截图:./screenshots_tmp/screen_33b9f356-e20f-4ed6-9a09-43afdcb5cd19.png
+2025-07-01 20:29:41,906 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:29:41] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-01 20:29:45,036 - root - INFO - 截图:./screenshots_tmp/screen_2738198f-8ece-4a26-a372-e6fae3e78abe.png
+2025-07-01 20:29:45,054 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:29:45] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-01 20:30:20,168 - root - INFO - 重启应用：com.sankuai.meituan.takeoutnew
+2025-07-01 20:30:20,801 - root - INFO - com.sankuai.meituan.takeoutnew 已重启
+2025-07-01 20:30:20,803 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:30:20] "POST /restart-app HTTP/1.1" 200 -
+2025-07-01 20:30:26,474 - root - INFO - 截图:./screenshots_tmp/screen_349de2ce-6dcf-4caf-a345-96eb3f976bbd.png
+2025-07-01 20:30:26,488 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:30:26] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-01 20:31:20,221 - root - INFO - 截图:./screenshots_tmp/screen_39353bbc-26f7-4226-b8ee-94a05f6a9049.png
+2025-07-01 20:31:20,274 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:20] "GET /get-screenshot HTTP/1.1" 200 -
+2025-07-01 20:31:29,134 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:29] "POST /infer HTTP/1.1" 200 -
+2025-07-01 20:31:34,105 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:34] "POST /infer HTTP/1.1" 200 -
+>>>>>>> 9fb824cd3bc9cd333eb0907206dc894b211c9cb7

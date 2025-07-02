@@ -23,13 +23,8 @@ BASE_ANNO_PATH='./annotations'
 BASE_SCREENSHOT_PATH='./screenshots_tmp'
 IMGS_PATH='./imgs_all'
 # vLLM 服务地址
-<<<<<<< HEAD
-API_URL = "http://localhost:8000/v1/chat/completions"
-# API_URL = "https://1c8d5b42.r25.cpolar.top/v1/chat/completions"
-=======
 # API_URL = "http://localhost:8100/v1/chat/completions"
 API_URL = "https://1c8d5b42.r25.cpolar.top/v1/chat/completions"
->>>>>>> 9fb824cd3bc9cd333eb0907206dc894b211c9cb7
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
