@@ -14,17 +14,17 @@ import requests
 import uuid
 from prompt_dispatcher import get_task_prompt
 app = Flask(__name__)
-CLOUD_DEVICE_IP_PORT = '10CF151STZ0011M'
+CLOUD_DEVICE_IP_PORT = '4af63a6b'
 #! adb
 ADB_PATH = r"adb"
 app_name = 'com.sankuai.meituan.takeoutnew' # 执行的应用的包名,用于开启和关闭应用
-LOG_PATH ='./app.log'
+LOG_PATH ='./app_new.log'
 BASE_ANNO_PATH='./annotations'
-BASE_SCREENSHOT_PATH='./screenshots_tmp'
+BASE_SCREENSHOT_PATH='./screenshots_tmp_new'
 IMGS_PATH='./imgs_all'
 # vLLM 服务地址
-# API_URL = "http://localhost:8100/v1/chat/completions"
-API_URL = "https://1c8d5b42.r25.cpolar.top/v1/chat/completions"
+API_URL = "http://localhost:8000/v1/chat/completions"
+# API_URL = " https://df05408.r25.cpolar.top/v1/chat/completions"
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
