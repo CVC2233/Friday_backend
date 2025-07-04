@@ -14,3 +14,10 @@ These instructions will help you set up and run the project locally.
 ```bash
 git clone <your-repository-url>
 cd <repository-folder>
+
+## Init Project
+Download the ADB keyboard.
+```bash
+adb install adb_keyboard.apk
+
+Set it as the default settings.

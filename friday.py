@@ -23,8 +23,8 @@ BASE_ANNO_PATH='./annotations'
 BASE_SCREENSHOT_PATH='./screenshots_tmp_new'
 IMGS_PATH='./imgs_all'
 # vLLM 服务地址
-API_URL = "http://localhost:8000/v1/chat/completions"
-# API_URL = " https://df05408.r25.cpolar.top/v1/chat/completions"
+# API_URL = "http://localhost:8000/v1/chat/completions"
+API_URL = "http://469dd27f.r25.cpolar.top/v1/chat/completions"
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -147,6 +147,7 @@ def parse_action(text):
             'need_feedback': r'need_feedback\(\s*"([^"]*)"\s*\)',
             'long_press': r'long_press\(\s*(\d+),\s*(\d+)\s*\)',
             'swipe': r'swipe\(\s*(\d+),\s*(\d+),\s*"([^"]+)",\s*"([^"]+)"\s*\)',
+            'swipe_two_points': r'swipe_two_points\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)',
             'wait': r'wait\(\s*\)',
             'FINISH': r'FINISH'
         }
@@ -172,6 +173,15 @@ def parse_action(text):
                         'y': int(y), 
                         'direction': direction, 
                         'distance': dist
+                    }
+                elif action_type == 'swipe_two_points':
+                    x_start,y_start,x_end,y_end=match.groups()
+                    return {
+                        'action': 'swipe_two_points',
+                        'x_start': int(x_start),
+                        'y_start': int(y_start),
+                        'x_end': int(x_end),
+                        'y_end': int(y_end)
                     }
                 elif action_type == 'wait':
                     return {'action': 'wait'}
@@ -215,6 +225,8 @@ def format_action(action_data):
             f'swipe({action_data["x"]}, {action_data["y"]}, '
             f'"{action_data["direction"]}", "{action_data["distance"]}")'
         )
+    elif action_type == 'swipe_two_points':
+        operation_str = f"swipe_two_points({action_data['x']},{action_data['y']},{action_data['x_end']},{action_data['y_end']})"
 
     elif action_type == 'wait':
         operation_str = "wait()"
@@ -495,6 +507,8 @@ def execute_action():
             x_end = x+base_dist*rate
             y_end = y
         ADBController.swipe(x,y,x_end,y_end)
+    elif action_info['action'] == 'swipe_two_points':
+        ADBController.swipe(action_info['x'],action_info['y'],action_info['x_end'],action_info['y_end'])
     elif action_info['action']=='text':
         ADBController.clear_text()
         ADBController.input_text(action_info['value'])

@@ -1663,5 +1663,2675 @@
         "images": [
             "imgs_all/58505325-971e-4707-b4bf-6058e077ac25.png"
         ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(637, 236)"
+            }
+        ],
+        "images": [
+            "imgs_all/70fe3826-37d1-4811-9b71-e320b3585390.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/09befd3b-91d8-4ee9-a69a-3c34f8750f3c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"库迪咖啡\")"
+            }
+        ],
+        "images": [
+            "imgs_all/21354feb-df45-4d3e-aa75-cb3aad0901a2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(955, 163)"
+            }
+        ],
+        "images": [
+            "imgs_all/aff8218d-0e49-4ce2-936b-e36f55041d8f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(624, 919)"
+            }
+        ],
+        "images": [
+            "imgs_all/389c656d-4740-4b45-a00b-9e92ae6623e7.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(641, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/8524ac62-9c26-4dd3-a7ae-268c41244036.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"生椰拿铁\")"
+            }
+        ],
+        "images": [
+            "imgs_all/b1747642-1078-444a-9c36-234b7a4e0603.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/100676f1-0e68-48d0-956e-4e001ad0bec1.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 585)"
+            }
+        ],
+        "images": [
+            "imgs_all/f29f9b9d-0059-442b-a418-337c987718a1.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions, and ensure that the specifications are: \"\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户输入商品规格\")"
+            }
+        ],
+        "images": [
+            "imgs_all/a0c4808f-9c85-48fc-9314-f31e5cfa0165.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions, and ensure that the specifications are: \"16盎司\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1849)"
+            }
+        ],
+        "images": [
+            "imgs_all/13a9b041-4692-4a3d-9d10-576d0988e6da.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions, and ensure that the specifications are: \"16盎司\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(550, 2065)"
+            }
+        ],
+        "images": [
+            "imgs_all/4403c472-a959-411b-9fff-b44eae5269ea.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions, and ensure that the specifications are: \"16盎司\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(108, 2237)"
+            }
+        ],
+        "images": [
+            "imgs_all/c89ce2d7-f8f4-4224-8e9c-03b5b869ae60.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions, and ensure that the specifications are: \"16盎司\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(902, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/cd04743c-4581-458c-b21c-443de8bac874.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"生椰拿铁\" from \"库迪咖啡\" by performing a series of actions, and ensure that the specifications are: \"16盎司\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/d66f6bc9-e052-456b-8b56-bed55bc0f3e9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(572, 232)"
+            }
+        ],
+        "images": [
+            "imgs_all/2726912a-615b-4dc8-bdf3-82912a5d9802.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"臻享韩国炸鸡\")"
+            }
+        ],
+        "images": [
+            "imgs_all/200b608b-f5cb-40e8-9cdf-1c6e199c0f04.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 156)"
+            }
+        ],
+        "images": [
+            "imgs_all/709feabf-7207-45b2-b9ff-cd955437577a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(467, 521)"
+            }
+        ],
+        "images": [
+            "imgs_all/3840a1cf-12dd-4987-9c47-bc56720f936f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(542, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/55e04d58-df24-46dd-ae78-97bba2001a0f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"无骨双拼中份炸鸡\")"
+            }
+        ],
+        "images": [
+            "imgs_all/f5a5d911-2b18-45ed-8176-4f91468eafc9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 580)"
+            }
+        ],
+        "images": [
+            "imgs_all/6869f556-f462-40ca-89eb-67a73b3adb57.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(370, 781)"
+            }
+        ],
+        "images": [
+            "imgs_all/5425981f-cf4d-454a-a471-7a7e749a3238.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/6e5b3dc6-b5db-481e-a8b0-fa42cb190729.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1847)"
+            }
+        ],
+        "images": [
+            "imgs_all/0d123c2e-537e-4a02-9fb7-3ae39ba0653d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 2010)"
+            }
+        ],
+        "images": [
+            "imgs_all/cc6aa1af-0cc2-4627-9c83-d2f2c72aa501.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(96, 2261)"
+            }
+        ],
+        "images": [
+            "imgs_all/792222c3-5e09-433f-9af5-63b2e19e01b8.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(902, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/7d10b22b-9181-4459-8fe0-59ea67b643e1.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"无骨双拼中份炸鸡\" from \"臻享韩国炸鸡\" by performing a series of actions, and ensure that the specifications are: \"蜂蜜芥末\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/e0187bbf-e80c-4069-9b03-98e1dd51953e.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"海盐焦糖拿铁\" from \"瑞幸咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(491, 245)"
+            }
+        ],
+        "images": [
+            "imgs_all/9338e26f-9f10-45a2-b1c4-ec500ccc332c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"海盐焦糖拿铁\" from \"瑞幸咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"瑞幸\")"
+            }
+        ],
+        "images": [
+            "imgs_all/be1a796f-3e36-48f0-8780-81d3fdd3917f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"海盐焦糖拿铁\" from \"瑞幸咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(947, 155)"
+            }
+        ],
+        "images": [
+            "imgs_all/d83db319-180e-4fbb-8f6e-9d13120b55ef.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"海盐焦糖拿铁\" from \"瑞幸咖啡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户操作\")"
+            }
+        ],
+        "images": [
+            "imgs_all/86783486-e120-49fc-aa16-005b71e55f87.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(620, 232)"
+            }
+        ],
+        "images": [
+            "imgs_all/2d9236e0-31d3-43da-9394-358a65d7ba34.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"肯德基\")"
+            }
+        ],
+        "images": [
+            "imgs_all/5d5f2a9b-9b66-4412-9af7-3cfdb0d3fead.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(951, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/8e6cd3b7-3341-4768-9a17-8e14eb7a1cdc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(825, 467)"
+            }
+        ],
+        "images": [
+            "imgs_all/15cca70b-6298-4e13-aa12-09aab4e918bc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(528, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/125224c1-ff63-4865-bb5c-83b2d8701915.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"绿豆薏仁粥三件套\")"
+            }
+        ],
+        "images": [
+            "imgs_all/53dcd3c5-e26f-4e4f-8317-0fc4bf83e409.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/0b46175f-ed42-4c38-af3f-f74291ed4826.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 500)"
+            }
+        ],
+        "images": [
+            "imgs_all/86e1c7e4-a485-4c46-ae3c-0303354aef31.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions, and ensure that the specifications are: \"绿豆薏仁粥,油条,酵豆浆(冰)\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(645, 1593)"
+            }
+        ],
+        "images": [
+            "imgs_all/c9638d82-fa7d-4f41-899e-e53abf83e2e7.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions, and ensure that the specifications are: \"绿豆薏仁粥,油条,酵豆浆(冰)\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(876, 2246)"
+            }
+        ],
+        "images": [
+            "imgs_all/87f3033c-7145-4c53-8506-0a56df7dccc3.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions, and ensure that the specifications are: \"绿豆薏仁粥,油条,酵豆浆(冰)\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(100, 2253)"
+            }
+        ],
+        "images": [
+            "imgs_all/8c318b3e-6d44-4e5e-b933-29411daeebf2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions, and ensure that the specifications are: \"绿豆薏仁粥,油条,酵豆浆(冰)\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/149cd24f-ff56-4557-9c38-fab18108b7f8.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions, and ensure that the specifications are: \"绿豆薏仁粥,油条,酵豆浆(冰)\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(900, 2250)"
+            }
+        ],
+        "images": [
+            "imgs_all/cc6ca4a2-6e69-40df-9d92-1aaa1cfa981c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"绿豆薏仁粥三件套\" from \"肯德基宅急送\" by performing a series of actions, and ensure that the specifications are: \"绿豆薏仁粥,油条,酵豆浆(冰)\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/eb294950-7285-4c55-bfc9-821d2584cce2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(499, 240)"
+            }
+        ],
+        "images": [
+            "imgs_all/0629f236-574d-4ee4-a273-6ae4536256e9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"东北铁锅炖特色东北菜\")"
+            }
+        ],
+        "images": [
+            "imgs_all/d7bb3340-419b-425c-a357-8ee074c79b64.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 156)"
+            }
+        ],
+        "images": [
+            "imgs_all/16a00f83-3311-41a1-9e5f-458dbcfc886a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(825, 525)"
+            }
+        ],
+        "images": [
+            "imgs_all/3fe3a4c4-b336-45ac-9245-9ddf947a74d3.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(529, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/ecffaa4f-1802-49eb-8c73-837b8fff9b6d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"牛肉大葱饺子\")"
+            }
+        ],
+        "images": [
+            "imgs_all/053e8232-3c80-4381-9bff-13d186b0566c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/d2948d00-e95d-4b34-86d3-d017cd85805a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 500)"
+            }
+        ],
+        "images": [
+            "imgs_all/81d1c998-af3e-469e-acf1-05743ca7ddd4.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(597, 865)"
+            }
+        ],
+        "images": [
+            "imgs_all/b614dc75-4174-4e20-b8e2-73b309ab8e49.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/82932a3f-0128-4005-b814-9dc168fd221a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1529)"
+            }
+        ],
+        "images": [
+            "imgs_all/11d9697f-dd94-4c62-a958-d6447b05feb8.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 1725)"
+            }
+        ],
+        "images": [
+            "imgs_all/a3c6b149-cb0c-4d59-82e8-055c1c6bbe52.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(98, 2261)"
+            }
+        ],
+        "images": [
+            "imgs_all/d92bf674-a7cf-4a2c-9596-8fe5d9513ece.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(902, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/40cfc9a8-baa8-411e-b35f-6d0b17cbee67.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/e50273c1-bc46-4976-ae87-5486016e4488.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"牛肉大葱饺子\" from \"东北铁锅炖特色东北菜\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/973d48ea-a277-487c-96bd-7fe59ff44b77.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(564, 245)"
+            }
+        ],
+        "images": [
+            "imgs_all/2d6b0948-0c2b-41bb-aafe-097f2680c023.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"等位砂锅\")"
+            }
+        ],
+        "images": [
+            "imgs_all/e2277bae-acd2-4ab8-9877-1632511ef3e7.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 156)"
+            }
+        ],
+        "images": [
+            "imgs_all/06708ef7-e411-4f4b-a5f0-e722bc08cc94.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(467, 521)"
+            }
+        ],
+        "images": [
+            "imgs_all/0ef33153-ec0a-43fb-a548-a3bbc2c0d0e3.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(530, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/f329f479-fa3a-4518-bdbd-5fb89a330bdf.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"砂锅土豆粉\")"
+            }
+        ],
+        "images": [
+            "imgs_all/7c3ed045-1f72-4848-a346-cceaea768be4.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 500)"
+            }
+        ],
+        "images": [
+            "imgs_all/a13c9146-6acd-4d9d-8553-7a124d056d0f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/6f19147a-db9c-4127-b8ad-6f34905aff92.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户输入商品规格\")"
+            }
+        ],
+        "images": [
+            "imgs_all/6fd2d27f-6c7d-4ad4-92d0-744ad7b00acc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(327, 1112)"
+            }
+        ],
+        "images": [
+            "imgs_all/c3d3cfbe-c8ca-4350-889b-9618d3a92803.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1529)"
+            }
+        ],
+        "images": [
+            "imgs_all/7632676e-e4d7-4d5b-8340-4347ada4f3ee.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 1524)"
+            }
+        ],
+        "images": [
+            "imgs_all/e776ebe2-addc-4a0b-9f9a-2676ae1b55e9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(964, 1516)"
+            }
+        ],
+        "images": [
+            "imgs_all/3e2f90aa-96e9-4dd1-8ee4-71a50da454a9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(536, 1728)"
+            }
+        ],
+        "images": [
+            "imgs_all/59718df7-ed83-40df-9940-71c6db7b47e6.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(90, 2241)"
+            }
+        ],
+        "images": [
+            "imgs_all/317ca54b-a903-4dbd-9806-86e17a0cb809.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/a62adf19-540c-4734-8480-a9275a3206f0.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(900, 2250)"
+            }
+        ],
+        "images": [
+            "imgs_all/204ce6dd-ace1-4251-b94c-759f309fadaa.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"3\" unit(s) of \"砂锅土豆粉\" from \"等位砂锅\" by performing a series of actions, and ensure that the specifications are: \"香辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/df83d88c-565f-4b57-b217-58a34f56ef0d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(538, 262)"
+            }
+        ],
+        "images": [
+            "imgs_all/d8f40cbc-e5ba-41fd-8273-1d6c9540e770.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"诚航小面\")"
+            }
+        ],
+        "images": [
+            "imgs_all/803509d5-2f47-486f-ac55-05d2dce90185.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 156)"
+            }
+        ],
+        "images": [
+            "imgs_all/248f71fb-9a86-4022-a4a8-26158b933b33.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(809, 525)"
+            }
+        ],
+        "images": [
+            "imgs_all/8561535b-a38e-4c79-9148-71ab021021d9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(530, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/0bca7d61-6f12-4040-ba25-624bae4ac278.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"豌杂面\")"
+            }
+        ],
+        "images": [
+            "imgs_all/d18e77f1-8445-4213-864c-deba8f3dd6ba.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/b9a795cf-0298-4cec-8ef6-cb006cc5ef96.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(1003, 500)"
+            }
+        ],
+        "images": [
+            "imgs_all/304791ec-5624-43fc-b955-4bcd386ea58b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(98, 2264)"
+            }
+        ],
+        "images": [
+            "imgs_all/a460cfaf-13b6-406b-954d-d2160943b815.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(908, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/dab11d60-6069-4a7a-9850-f931109fb14d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"豌杂面\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/18c19391-15d3-460c-b7a8-72911ecb5ae8.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(530, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/3e4b9dc7-d5ed-406c-b82a-cc486a6783ad.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"肉三鲜\")"
+            }
+        ],
+        "images": [
+            "imgs_all/8982609f-e09e-4fe0-a208-c7a94b0e9213.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/9995b8e8-95b0-4eee-b5ab-34dd17f641e7.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 500)"
+            }
+        ],
+        "images": [
+            "imgs_all/7075918a-3ab1-45c4-b5ed-2eb284e8f885.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(597, 867)"
+            }
+        ],
+        "images": [
+            "imgs_all/c03d5157-8570-4710-9359-0fe34c2daeac.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/afaebf6c-650a-4737-89e8-e53a5a1da583.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1529)"
+            }
+        ],
+        "images": [
+            "imgs_all/61140f70-7447-46a1-85d9-c2590a69aa82.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 1755)"
+            }
+        ],
+        "images": [
+            "imgs_all/18946c9a-77da-4891-95df-11f359c98e7b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(99, 2246)"
+            }
+        ],
+        "images": [
+            "imgs_all/fe731a9c-e5d6-4bdd-afd6-030f733bdaab.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(900, 2250)"
+            }
+        ],
+        "images": [
+            "imgs_all/326d7f7a-4160-46e1-b8ae-639833824065.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"肉三鲜\" from \"东北铁锅炖\" by performing a series of actions, and ensure that the specifications are: \"大份\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/30981789-b56f-4a29-8d4f-c494abb6feb3.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(525, 240)"
+            }
+        ],
+        "images": [
+            "imgs_all/2d107ad6-fb89-4750-ac5e-bdc7afe129de.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"沪上阿姨\")"
+            }
+        ],
+        "images": [
+            "imgs_all/f3320f04-20fe-4e05-b182-831112c1739c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 159)"
+            }
+        ],
+        "images": [
+            "imgs_all/15fc03d9-2cc6-489b-b051-3a01d7951f68.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(528, 1229)"
+            }
+        ],
+        "images": [
+            "imgs_all/e216ad1d-b9ee-4c1b-9ad1-cbb3c48bd5b5.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(534, 159)"
+            }
+        ],
+        "images": [
+            "imgs_all/c2d41119-4fdb-4ca7-8a9a-5d4ac2daa160.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"风起青芒冰茶\")"
+            }
+        ],
+        "images": [
+            "imgs_all/40760035-5aac-43ce-8525-32fb7fbe4571.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/860c26d9-1251-454f-aeb4-2bc547574f09.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户操作\")"
+            }
+        ],
+        "images": [
+            "imgs_all/f0279e7d-7140-492a-a02a-a431f7e3dbd2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 580)"
+            }
+        ],
+        "images": [
+            "imgs_all/9e6e22ea-5bde-4634-a5f1-6b8af51d13a1.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/4bf1811a-ce7a-4c3e-b3d1-8dbb8c5a9a09.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户输入商品规格\")"
+            }
+        ],
+        "images": [
+            "imgs_all/4ccc54e6-34a3-466e-bd3a-fa2299cc087c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(825, 1849)"
+            }
+        ],
+        "images": [
+            "imgs_all/575f2a09-5881-4ba7-8598-b8fc19964bae.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 2010)"
+            }
+        ],
+        "images": [
+            "imgs_all/c0a1bc56-a85d-47e9-8090-66bdfea94b7e.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"完成选购，由于未到起送费，需要用户介入\")"
+            }
+        ],
+        "images": [
+            "imgs_all/64811843-834d-41f8-b24d-f8525ed50530.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(116, 2263)"
+            }
+        ],
+        "images": [
+            "imgs_all/512287a0-9b23-4bf9-a735-4ad4a312b6fe.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(1011, 1966)"
+            }
+        ],
+        "images": [
+            "imgs_all/5423a983-9de5-43b8-afb1-6679ad978b3d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(902, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/aa97b92c-9a93-4d9b-8d2e-110cd318b580.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"风起青芒冰茶\" from \"沪上阿姨\" by performing a series of actions, and ensure that the specifications are: \"常规糖,正常冰\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/4860f02d-5487-4237-8588-7d7c1e8ecc1c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 580)"
+            }
+        ],
+        "images": [
+            "imgs_all/08af65ac-91bb-49ee-b7dd-a8ded02513dc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions, and ensure that the specifications are: \"标准冰,标准甜\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1647)"
+            }
+        ],
+        "images": [
+            "imgs_all/b0aeb9be-5df8-4d84-9245-e18a0d647256.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions, and ensure that the specifications are: \"标准冰,标准甜\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(964, 1644)"
+            }
+        ],
+        "images": [
+            "imgs_all/5f94dd11-6c5d-453b-b032-4641c91bb016.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions, and ensure that the specifications are: \"标准冰,标准甜\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 1833)"
+            }
+        ],
+        "images": [
+            "imgs_all/6ef63bbf-e0f6-4fd7-aaaa-1294b343f5dc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions, and ensure that the specifications are: \"标准冰,标准甜\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(103, 2228)"
+            }
+        ],
+        "images": [
+            "imgs_all/9c2a3d8e-88bc-4e4b-8b2b-61f7e2955ab4.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions, and ensure that the specifications are: \"标准冰,标准甜\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(902, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/7b10164f-5974-4598-ae5e-59b863555b96.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"轻云特浓抹\" from \"茶话弄\" by performing a series of actions, and ensure that the specifications are: \"标准冰,标准甜\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/329d73cc-f022-45fb-b172-80d0ed9f8ad8.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(495, 236)"
+            }
+        ],
+        "images": [
+            "imgs_all/db174d00-bc3c-4c70-a552-73869c38bc00.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"小疆君大盘鸡\")"
+            }
+        ],
+        "images": [
+            "imgs_all/655869ae-2861-4329-ab09-b369dbccd619.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 155)"
+            }
+        ],
+        "images": [
+            "imgs_all/f00a5952-7859-4d63-ba7a-040c39206d38.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(467, 385)"
+            }
+        ],
+        "images": [
+            "imgs_all/5abe6ec8-05d1-4290-95cc-05c71deca4e0.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(538, 155)"
+            }
+        ],
+        "images": [
+            "imgs_all/62e59dc7-0ab9-45f6-b77d-7745b7040e69.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"大盘鸡炒锅盔\")"
+            }
+        ],
+        "images": [
+            "imgs_all/9337b9e8-7a48-4ef2-b09d-b031e9a8f017.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/5720922a-2a34-4496-b462-00d8bf208923.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 561)"
+            }
+        ],
+        "images": [
+            "imgs_all/31f93a95-e7a3-494e-a7d5-9900d02a55ad.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户输入商品规格\")"
+            }
+        ],
+        "images": [
+            "imgs_all/5cc436c6-2d8a-4544-8690-3001e153141d.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(297, 1056)"
+            }
+        ],
+        "images": [
+            "imgs_all/8cbc5dff-c1e1-48a1-9d84-4f3effd1c33a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/ec19f119-6b9c-4c47-91a5-bc2a9bbc7e78.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1590)"
+            }
+        ],
+        "images": [
+            "imgs_all/758b8bbc-9b4a-4d81-8b38-58f30d5fbb7f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 1800)"
+            }
+        ],
+        "images": [
+            "imgs_all/694f00a6-b522-422e-853c-b562ff59c7d2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"完成选购，由于未到起送费，需要用户介入\")"
+            }
+        ],
+        "images": [
+            "imgs_all/3c425d47-7e31-4035-bea6-cd7210887ef2.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(101, 2261)"
+            }
+        ],
+        "images": [
+            "imgs_all/93635721-c8a3-4fc5-82ff-80af35667a49.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(899, 2250)"
+            }
+        ],
+        "images": [
+            "imgs_all/e2bfdaf4-542b-475d-9fe5-5fbec69e567a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"大盘鸡炒锅盔\" from \"小疆君大盘鸡\" by performing a series of actions, and ensure that the specifications are: \"微辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/e7ba8881-cddd-4397-8fbd-7b94f3d1c9e8.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(568, 249)"
+            }
+        ],
+        "images": [
+            "imgs_all/0cfe31db-2102-4d12-91f5-e57d3aa47193.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"蜀味轩\")"
+            }
+        ],
+        "images": [
+            "imgs_all/b0d13089-c5e5-4706-a2f0-c87e76d65d12.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 156)"
+            }
+        ],
+        "images": [
+            "imgs_all/dfda950f-b4e5-4e28-84e0-3fe6bbaf2a05.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(701, 416)"
+            }
+        ],
+        "images": [
+            "imgs_all/48999d86-8102-49c1-a863-6698543365a7.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(528, 150)"
+            }
+        ],
+        "images": [
+            "imgs_all/b4b4e2d0-4e66-4c13-bd35-67999ae7708f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"口水鸡\")"
+            }
+        ],
+        "images": [
+            "imgs_all/feed9605-fecf-4fa8-8ae9-8db67a8e4374.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/b521e792-dedb-49c8-9381-fd096bcf7dae.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(1003, 500)"
+            }
+        ],
+        "images": [
+            "imgs_all/b6e2c781-8bbc-46af-98f5-3d1fd657b66e.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(98, 2264)"
+            }
+        ],
+        "images": [
+            "imgs_all/adda7e45-64a0-4987-9e09-9b37e622d3fd.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/f6bae6ac-a291-4d9b-9f23-b96a6671b539.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(908, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/1b5c4c0c-6246-4bff-979d-2eae35b4d517.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/51a60da3-692e-477e-af33-64060d97dcbc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"口水鸡\" from \"蜀味轩\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/52b4b8c6-7c54-4515-b5a0-53599a77a1b9.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(521, 236)"
+            }
+        ],
+        "images": [
+            "imgs_all/4c8c277f-f7bf-4d7f-9811-ef135f805097.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"王婆大虾\")"
+            }
+        ],
+        "images": [
+            "imgs_all/a8ba2caf-7861-4e71-b972-ed7021926f02.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(955, 167)"
+            }
+        ],
+        "images": [
+            "imgs_all/913767d2-726b-408d-b495-df8663f5c4c0.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(663, 399)"
+            }
+        ],
+        "images": [
+            "imgs_all/ed622a7a-7f57-4188-9776-2fedeeb2eafd.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(538, 146)"
+            }
+        ],
+        "images": [
+            "imgs_all/367a49ee-a284-4aaa-b5c1-7c239766c61b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"香辣排骨大虾\")"
+            }
+        ],
+        "images": [
+            "imgs_all/874630e4-038f-4085-b692-366c8b51e801.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/3973fd19-d210-4645-b874-9736bcd5629a.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 628)"
+            }
+        ],
+        "images": [
+            "imgs_all/cc956d73-8c83-432f-ad23-35c0d99f48ef.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户输入商品规格\")"
+            }
+        ],
+        "images": [
+            "imgs_all/14f3809d-ed29-4eac-938e-86b4ae4d94ed.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(480, 1112)"
+            }
+        ],
+        "images": [
+            "imgs_all/d79762af-11ad-4889-9474-d64f4ed3c939.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: wait()"
+            }
+        ],
+        "images": [
+            "imgs_all/53a444cd-baf3-4280-a910-87ae3499d5c4.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(826, 1529)"
+            }
+        ],
+        "images": [
+            "imgs_all/02b57f4e-1d07-4b54-a6c4-54f424566c62.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(540, 1725)"
+            }
+        ],
+        "images": [
+            "imgs_all/1d73dffb-adb0-4149-85bb-cb9b7270f479.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(95, 2228)"
+            }
+        ],
+        "images": [
+            "imgs_all/6165404f-4e98-4733-a82d-bb3d55b496ab.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(902, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/a1aba4c6-afc5-467f-bc68-e7ac77f1a076.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"香辣排骨大虾\" from \"王婆大虾\" by performing a series of actions, and ensure that the specifications are: \"麻辣\"."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/d30d802c-7021-4f66-be39-92033a384810.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"厚牛堡尝鲜三件套\" from \"牛约堡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(543, 153)"
+            }
+        ],
+        "images": [
+            "imgs_all/ff84e635-ca2c-44c0-9216-406451aa03b1.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"厚牛堡尝鲜三件套\" from \"牛约堡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"厚牛堡尝鲜三件套\")"
+            }
+        ],
+        "images": [
+            "imgs_all/760bf7bc-aec5-47c1-aed1-bcf72d07e041.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"厚牛堡尝鲜三件套\" from \"牛约堡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(960, 587)"
+            }
+        ],
+        "images": [
+            "imgs_all/3e58cfab-0e27-455f-b047-6aaf7252d594.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"厚牛堡尝鲜三件套\" from \"牛约堡\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: need_feedback(\"需要用户输入商品规格\")"
+            }
+        ],
+        "images": [
+            "imgs_all/fd76d34e-6557-4766-b70f-8204070dd360.png"
+        ]
     }
 ]

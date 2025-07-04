@@ -1,0 +1,242 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe_coordinate(886,1091,422,1091)"
+            }
+        ],
+        "images": [
+            "imgs_all/d5e983d1-a665-4cf1-bd04-f74768113f08.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe_coordinate(202,975,852,975)"
+            }
+        ],
+        "images": [
+            "imgs_all/1e81f00e-603b-4237-a900-f41cf118b72b.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe_coordinate(129,988,843,988)"
+            }
+        ],
+        "images": [
+            "imgs_all/66f991d3-0938-4b4b-9b48-a3b1b8f82549.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe(189, 992, \"right\", \"medium\")"
+            }
+        ],
+        "images": [
+            "imgs_all/0d06d8e8-7ab7-4fed-bfc6-ab966b81c2dd.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe_coordinate(202,966,805,966)"
+            }
+        ],
+        "images": [
+            "imgs_all/b29e7a43-08e5-490b-932e-45db265d88eb.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe_coordinate(792,1919,792,794)"
+            }
+        ],
+        "images": [
+            "imgs_all/412dd58d-7dc0-4245-966f-4e6ea1839e3c.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: swipe_coordinate(65,1773,1033,1773)"
+            }
+        ],
+        "images": [
+            "imgs_all/a9bf4012-5c06-4a72-a6cc-f9b508d71797.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(1003, 1571)"
+            }
+        ],
+        "images": [
+            "imgs_all/296a6e5f-31bd-4885-8db1-847c4e64b308.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"0\" unit(s) of \"test\" from \"test\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(1007, 1580)"
+            }
+        ],
+        "images": [
+            "imgs_all/bbc8fbd5-b8d5-404b-9941-d54686ad30dc.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(658, 249)"
+            }
+        ],
+        "images": [
+            "imgs_all/7f47e5c6-dbaf-41a0-b593-fd89101bc37e.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: text(\"诚航小面\")"
+            }
+        ],
+        "images": [
+            "imgs_all/3232a920-61b1-4a9b-ba57-f296a007d187.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(968, 156)"
+            }
+        ],
+        "images": [
+            "imgs_all/9c2864a9-359f-452f-a8d8-fd4f02b4a2ae.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(525, 391)"
+            }
+        ],
+        "images": [
+            "imgs_all/a4763eb8-45c3-4f14-b599-f5a86beae974.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(112, 2237)"
+            }
+        ],
+        "images": [
+            "imgs_all/5ef2b3f3-d24b-486b-8ec6-cfab351a66d6.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(908, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/09973600-1f20-4dd8-a19a-dc95add7c49f.png"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"2\" unit(s) of \"猪肉大葱干\" from \"诚航小面\" by performing a series of actions."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: FINISH"
+            }
+        ],
+        "images": [
+            "imgs_all/4a468ab9-fd9e-4022-a2f8-148f5f18b3d0.png"
+        ]
+    }
+]
