@@ -7,6 +7,7 @@ from app_prompts.meituan_waimai_prompts import meituan_waimai_shopping_prompt,ch
 PROMPT_ROUTER = {
     ("meituan_waimai", "shopping"): meituan_waimai_shopping_prompt,
     ("wechat","chat"):chat_test_prompt
+    
 }
 
 def get_task_prompt(app_name, task_type, **kwargs):

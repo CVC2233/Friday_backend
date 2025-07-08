@@ -51,6 +51,10 @@ class ADBController:
 
     @staticmethod
     def get_screenshot():
+        if not os.path.exists(BASE_SCREENSHOT_PATH):
+            # 不存在则创建目录
+            os.makedirs(BASE_SCREENSHOT_PATH)
+            print(f"目录 {BASE_SCREENSHOT_PATH} 已创建。")
         # 定义目标路径
         local_path = f'{BASE_SCREENSHOT_PATH}/screen_{uuid.uuid4()}.png'
         # 确保本地文件夹存在
