@@ -11,3 +11,5 @@ def meituan_waimai_shopping_prompt(quantity, item_name, store_name=None, specs=N
 
     prompt += '.'
     return prompt
+def chat_test_prompt(test):
+    return f"test---{test}"

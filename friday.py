@@ -23,8 +23,8 @@ BASE_ANNO_PATH='./annotations'
 BASE_SCREENSHOT_PATH='./screenshots_tmp_new'
 IMGS_PATH='./imgs_all'
 # vLLM 服务地址
-# API_URL = "http://localhost:8000/v1/chat/completions"
-API_URL = "http://469dd27f.r25.cpolar.top/v1/chat/completions"
+API_URL = "http://localhost:8000/v1/chat/completions"
+# API_URL = "http://469dd27f.r25.cpolar.top/v1/chat/completions"
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -252,7 +252,7 @@ class AnnotationStore:
 def get_screenshot():
     # 获取屏幕截图
     # 本地图片路径
-    # image_path = 'screenshots/screen.png'
+    # image_path = 'screenshots/test.png'
     image_path=ADBController.get_screenshot()
     with open(image_path, 'rb') as f:
         image_bytes = f.read()
@@ -270,25 +270,30 @@ def restart_app():
     ADBController.restart_app()
     return jsonify({'status':'success','data':None,'message':"重启成功"})
 # 根据任务类型填充不同的模版
-def fill_templete_by_task(slot_info):
-    if(slot_info.get('task_type','')=='shopping'):
-        # return SHOPPING_QUESTION_PROMPT.format(
-        #     task_type='shopping',
-        #     app_name=slot_info.get('app_name',''),
-        #     item_name=slot_info.get('item_name',''),
-        #     store_name=slot_info.get('store_name',''),
-        #     specs=slot_info.get('specs',''),
-        #     quantity=slot_info.get('quantity',1)
-        # )
-        return get_task_prompt(
-            task_type='shopping',
-            app_name=slot_info.get('app_name'),
-            item_name=slot_info.get('item_name',''),
-            store_name=slot_info.get('store_name',''),
-            specs=slot_info.get('specs',''),
-            quantity=slot_info.get('quantity',1)
-        )
-    return ''
+def fill_templete_by_task(task_type,app_name,slot_info):
+    return get_task_prompt(
+        task_type=task_type,
+        app_name=app_name,
+        **slot_info
+    )
+    # if(slot_info.get('task_type','')=='shopping'):
+    #     # return SHOPPING_QUESTION_PROMPT.format(
+    #     #     task_type='shopping',
+    #     #     app_name=slot_info.get('app_name',''),
+    #     #     item_name=slot_info.get('item_name',''),
+    #     #     store_name=slot_info.get('store_name',''),
+    #     #     specs=slot_info.get('specs',''),
+    #     #     quantity=slot_info.get('quantity',1)
+    #     # )
+    #     return get_task_prompt(
+    #         task_type='shopping',
+    #         app_name=slot_info.get('app_name'),
+    #         item_name=slot_info.get('item_name',''),
+    #         store_name=slot_info.get('store_name',''),
+    #         specs=slot_info.get('specs',''),
+    #         quantity=slot_info.get('quantity',1)
+    #     )
+    # return ''
 # 填充
 # 构建请求体
 def build_payload(image_base64, query):
@@ -313,9 +318,12 @@ def infer():
     # 1. 获取前端传来的 Base64 图片和其他参数
     data = request.get_json()
     base64_str = data['image_base64']  # 格式如 "data:image/png;base64,xxxxx"
+    task_type=data.get('task_type','')
+    app_name=data.get('app_name','')
     slot_info=data.get('slot_info',{})
+    print(slot_info)
     # 2. 填充query
-    query=fill_templete_by_task(slot_info=slot_info)
+    query=fill_templete_by_task(task_type=task_type,app_name=app_name,slot_info=slot_info)
     # 3. 构建prompt
     payload=build_payload(base64_str,query=query)
     # 4. 请求模型
@@ -451,9 +459,11 @@ def save_annotation():
     data = request.get_json()
     slot_info=data['slot_info']
     action_info=data['action_info']
+    app_name=data.get('app_name','')
+    task_type=data.get('task_type','')
     user_id=data.get('user_id','default')# 如果未填,则保存到default文件中
     image_base64=data['image_base64']
-    query=fill_templete_by_task(slot_info=slot_info)
+    query=fill_templete_by_task(slot_info=slot_info,app_name=app_name,task_type=task_type)
     action=format_action(action_data=action_info)
     image_name=f"{uuid.uuid4()}.png"
     prompt =   {

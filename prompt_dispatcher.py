@@ -1,11 +1,12 @@
 # prompt_dispatcher.py
 
 from prompt_templates import TASK_DEFINITION_PROMPT
-from app_prompts.meituan_waimai_prompts import meituan_waimai_shopping_prompt
+from app_prompts.meituan_waimai_prompts import meituan_waimai_shopping_prompt,chat_test_prompt
 # ... 可继续扩展
 
 PROMPT_ROUTER = {
     ("meituan_waimai", "shopping"): meituan_waimai_shopping_prompt,
+    ("wechat","chat"):chat_test_prompt
 }
 
 def get_task_prompt(app_name, task_type, **kwargs):
