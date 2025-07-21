@@ -553,5 +553,20 @@
         "images": [
             "imgs_all/37a22696-1fe0-4d49-98c9-895d4000122c.png"
         ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You need to complete a \"shopping\" task in the \"meituan_waimai\" application. Specifically, you need to purchase \"1\" unit(s) of \"\" by performing a series of actions. To click the Go to Checkout button, click inside the yellow box."
+            },
+            {
+                "role": "assistant",
+                "content": "Action: tap(908, 2256)"
+            }
+        ],
+        "images": [
+            "imgs_all/ab0109f6-ab15-4012-b8f4-9afea729daa2.png"
+        ]
     }
 ]

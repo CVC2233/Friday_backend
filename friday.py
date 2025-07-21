@@ -328,6 +328,7 @@ def infer():
     print(slot_info)
     # 2. 填充query
     query=fill_templete_by_task(task_type=task_type,app_name=app_name,slot_info=slot_info)
+    logging.info(query)
     # 3. 构建prompt
     payload=build_payload(base64_str,query=query)
     # 4. 请求模型
