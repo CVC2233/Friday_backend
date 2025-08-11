@@ -13,8 +13,9 @@ from prompt_templates import SHOPPING_QUESTION_PROMPT
 import requests 
 import uuid
 from prompt_dispatcher import get_task_prompt
+from multi_agents.friday_multi_agents import MultiAgentSystem 
 app = Flask(__name__)
-CLOUD_DEVICE_IP_PORT = '4af63a6b'
+CLOUD_DEVICE_IP_PORT = 'ASALE3741B000022'
 #! adb
 ADB_PATH = r"adb"
 app_name = 'com.sankuai.meituan.takeoutnew' # 执行的应用的包名,用于开启和关闭应用
@@ -58,7 +59,6 @@ class ADBController:
         # 定义目标路径
         local_path = f'{BASE_SCREENSHOT_PATH}/screen_{uuid.uuid4()}.png'
         # 确保本地文件夹存在
-        import os
         if not os.path.exists(BASE_SCREENSHOT_PATH):
             os.makedirs(BASE_SCREENSHOT_PATH)
 
@@ -388,6 +388,31 @@ def append_to_json_file(data_to_append, filename):
         print(f"数据成功追加到 {filename}")
     except IOError as e:
         print(f"错误: 无法写入文件 {filename}。{e}")
+
+@app.route('/infer_multi_agents', methods=['POST'])
+def infer_multi_agents():
+    # 推理
+    # 传参:image_base64,base_64编码的png图片内容;goal: 用户指令的字符串
+    # 1. 获取前端传来的 Base64 图片和其他参数
+    data = request.get_json()
+    base64_str = data['image_base64']  # 格式如 "data:image/png;base64,xxxxx"
+    task_type=data.get('task_type','')
+    app_name=data.get('app_name','')
+    slot_info=data.get('slot_info',{})
+    goal=fill_templete_by_task(task_type=task_type,app_name=app_name,slot_info=slot_info)
+    print(goal)
+    app_automator = MultiAgentSystem()
+    content=app_automator.run(goal,base64_str)
+    print(f"✅  响应内容:\n{content}")
+    logging.debug(f"✅  响应内容:\n{content}")
+    content=parse_action(content)
+    print(content)
+    return jsonify({
+        'status':'success',
+        'data':content,
+        'message':'模型成功响应'
+    })
+
 def save_base64_to_png(base64_string, output_dir, filename=None):
     """
     解码Base64字符串并将其保存为PNG图片文件。
@@ -528,6 +553,7 @@ def execute_action():
         ADBController.clear_text()
         ADBController.input_text(action_info['value'])
     return jsonify({'status': 'success','data':None,'message':'执行成功'})
+
 @app.route('/test_get',methods=['GET'])
 def hello_world():
     return 'Hello, World!'
