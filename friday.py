@@ -14,8 +14,10 @@ import requests
 import uuid
 import sys
 from prompt_dispatcher import get_task_prompt
+from flask_cors import CORS # 1. 导入 CORS
 # 1. 初始化 Flask 应用
 app = Flask(__name__)
+CORS(app) # 2. 将 app 实例传递给 CORS，完成初始化
 # 2. 从 config.py 文件加载配置
 # 2. 动态确定 config.py 的路径并加载配置
 #    这是解决 PyInstaller 问题的核心代码
