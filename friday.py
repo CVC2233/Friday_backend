@@ -12,20 +12,53 @@ from PIL import Image
 from prompt_templates import SHOPPING_QUESTION_PROMPT
 import requests 
 import uuid
+import sys
 from prompt_dispatcher import get_task_prompt
-from multi_agents.friday_multi_agents import MultiAgentSystem 
+# 1. 初始化 Flask 应用
 app = Flask(__name__)
-CLOUD_DEVICE_IP_PORT = 'ASALE3741B000022'
-#! adb
-ADB_PATH = r"adb"
-app_name = 'com.sankuai.meituan.takeoutnew' # 执行的应用的包名,用于开启和关闭应用
-LOG_PATH ='./app_new.log'
-BASE_ANNO_PATH='./annotations'
-BASE_SCREENSHOT_PATH='./screenshots_tmp_new'
-IMGS_PATH='./imgs_all'
-# vLLM 服务地址
-API_URL = "http://localhost:8000/v1/chat/completions"
-# API_URL = "http://469dd27f.r25.cpolar.top/v1/chat/completions"
+# 2. 从 config.py 文件加载配置
+# 2. 动态确定 config.py 的路径并加载配置
+#    这是解决 PyInstaller 问题的核心代码
+def get_base_path():
+    # 如果是 PyInstaller 打包的，sys.frozen 属性会被设置成 True
+    if getattr(sys, 'frozen', False):
+        # 返回可执行文件所在的目录
+        return os.path.dirname(sys.executable)
+    else:
+        # 否则，返回脚本文件所在的目录
+        return os.path.dirname(os.path.abspath(__file__))
+
+try:
+    # 构造 config.py 的绝对路径
+    config_path = os.path.join(get_base_path(), 'config.py')
+    
+    # 检查文件是否存在
+    if not os.path.exists(config_path):
+        raise FileNotFoundError
+    
+    # 使用 from_pyfile 从绝对路径加载
+    app.config.from_pyfile(config_path)
+
+except FileNotFoundError:
+    print(f"错误: 无法在路径 '{config_path}' 找到 'config.py' 文件。")
+    print("请确保 config.py 文件与可执行文件或主脚本在同一目录下。")
+    sys.exit(1) # 使用 sys.exit(1) 来终止程序，这比 exit() 更规范
+
+# 3. 使用 app.config[] 来获取配置值
+CLOUD_DEVICE_IP_PORT = app.config['CLOUD_DEVICE_IP_PORT']
+ADB_PATH = app.config['ADB_PATH']
+DEFAULT_APP_NAME = app.config['DEFAULT_APP_NAME']
+LOG_PATH = app.config['LOG_PATH']
+BASE_ANNO_PATH = app.config['BASE_ANNO_PATH']
+BASE_SCREENSHOT_PATH = app.config['BASE_SCREENSHOT_PATH']
+IMGS_PATH = app.config['IMGS_PATH']
+API_URL = app.config['VLLM_API_URL']
+
+# 确保日志和数据目录存在
+os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
+os.makedirs(BASE_ANNO_PATH, exist_ok=True)
+os.makedirs(BASE_SCREENSHOT_PATH, exist_ok=True)
+os.makedirs(IMGS_PATH, exist_ok=True)
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -69,7 +102,175 @@ class ADBController:
         logging.info(f"截图:{local_path}")
         # 返回图片路径
         return local_path
+    @staticmethod
+    def get_ui_hierarchy():
+        """
+        获取设备的UI层次结构 (window_dump)。
+        :return: UI层次结构的XML内容字符串，失败则返回None。
+        """
+        # 确保临时目录存在
+        if not os.path.exists(BASE_SCREENSHOT_PATH):
+            os.makedirs(BASE_SCREENSHOT_PATH)
+            
+        local_xml_path = f'{BASE_SCREENSHOT_PATH}/ui_dump_{uuid.uuid4()}.xml'
+        device_xml_path = '/sdcard/window_dump.xml'
 
+        try:
+            # 1. 在设备上dump UI树
+            subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'uiautomator', 'dump', device_xml_path], check=True, capture_output=True)
+            # 2. 从设备拉取XML文件
+            subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'pull', device_xml_path, local_xml_path], check=True, capture_output=True)
+            
+            logging.info(f"UI树文件成功保存至: {local_xml_path}")
+            
+            # 3. 读取XML文件内容
+            with open(local_xml_path, 'r', encoding='utf-8') as f:
+                xml_content = f.read()
+            
+            # 4. (可选) 清理本地的临时XML文件
+            os.remove(local_xml_path)
+            
+            return xml_content
+            
+        except subprocess.CalledProcessError as e:
+            logging.error(f"ADB获取UI树操作失败: {e.stderr.decode()}")
+            return None
+        except FileNotFoundError:
+            logging.error(f"未找到拉取下来的UI树文件: {local_xml_path}")
+            return None
+        except Exception as e:
+            logging.error(f"读取或处理UI树文件时发生未知错误: {e}")
+            return None
+
+    @staticmethod
+    def get_foreground_package():
+        """
+        获取当前前台（焦点/可见）应用包名，采用多策略回退。
+        返回: 包名字符串，无法获取时返回 'unknown'
+        """
+        strategies = [
+            # 优先从 window 当前焦点窗口解析
+            [ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'dumpsys', 'window', 'windows'],
+            # 从 Activity 栈中找 top resumed
+            [ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'dumpsys', 'activity', 'activities'],
+            # 从 top（兼容部分系统）
+            [ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'dumpsys', 'activity', 'top'],
+            # Android 11+ 的可见活动
+            [ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'cmd', 'activity', 'get-visible-activities'],
+        ]
+        try:
+            # 1) dumpsys window windows
+            out = subprocess.run(strategies[0], capture_output=True, text=True).stdout
+            m = re.search(r'mCurrentFocus=Window\{[^ ]+\s+([^/}\s]+)', out)
+            if m:
+                return m.group(1)
+
+            # 2) dumpsys activity activities
+            out = subprocess.run(strategies[1], capture_output=True, text=True).stdout
+            m = re.search(r'topResumedActivity.*\s+([^/\s]+)/', out)
+            if m:
+                return m.group(1)
+
+            # 3) dumpsys activity top
+            out = subprocess.run(strategies[2], capture_output=True, text=True).stdout
+            m = re.search(r'ACTIVITY\s+([^/\s]+)/', out)
+            if m:
+                return m.group(1)
+
+            # 4) get-visible-activities
+            out = subprocess.run(strategies[3], capture_output=True, text=True).stdout.strip()
+            if out:
+                # 可能是形如 "com.xxx/.MainActivity" 或多行，取第一段包名
+                first_line = out.splitlines()[0]
+                return first_line.split('/')[0]
+        except Exception as e:
+            logging.error(f"获取前台包名失败: {e}")
+
+        return "unknown"
+
+    @staticmethod
+    def capture_all(remove_local_tmp_xml=True):
+        """
+        一次性获取：截图(base64)、UI树(XML字符串)、前台包名。
+        返回:
+            {
+                'screenshot_base64': 'data:image/png;base64,...',
+                'ui_xml': '<hierarchy ...>...</hierarchy>',
+                'package': 'com.xxx.yyy'
+            }
+        失败时对应字段可能为 None/unknown，但不抛异常。
+        """
+        # 目录准备
+        os.makedirs(BASE_SCREENSHOT_PATH, exist_ok=True)
+
+        # 临时路径
+        local_png = os.path.join(BASE_SCREENSHOT_PATH, f'screen_{uuid.uuid4()}.png')
+        device_png = '/sdcard/screen.png'
+        local_xml = os.path.join(BASE_SCREENSHOT_PATH, f'ui_dump_{uuid.uuid4()}.xml')
+        device_xml = '/sdcard/window_dump.xml'
+
+        screenshot_b64 = None
+        ui_xml_str = None
+
+        # A) 截图
+        try:
+            subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'screencap', '-p', device_png],
+                           check=True, capture_output=True)
+            subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'pull', device_png, local_png],
+                           check=True, capture_output=True)
+            # 读取并编码
+            with open(local_png, 'rb') as f:
+                screenshot_b64 = 'data:image/png;base64,' + base64.b64encode(f.read()).decode('utf-8')
+            logging.info(f"截图完成: {local_png}")
+        except subprocess.CalledProcessError as e:
+            logging.error(f"截图失败: {e.stderr.decode() if e.stderr else e}")
+        except Exception as e:
+            logging.error(f"处理截图失败: {e}")
+        finally:
+            # 设备侧清理
+            try:
+                subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'rm', '-f', device_png],
+                               capture_output=True)
+            except Exception:
+                pass
+            # 本地可按需保留
+            # 可选：os.remove(local_png)
+
+        # B) UI 树
+        try:
+            subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'uiautomator', 'dump', device_xml],
+                           check=True, capture_output=True)
+            subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'pull', device_xml, local_xml],
+                           check=True, capture_output=True)
+            with open(local_xml, 'r', encoding='utf-8') as f:
+                ui_xml_str = f.read()
+            logging.info(f"UI树完成: {len(ui_xml_str)} chars")
+        except subprocess.CalledProcessError as e:
+            logging.error(f"UI树dump失败: {e.stderr.decode() if e.stderr else e}")
+        except Exception as e:
+            logging.error(f"读取UI树失败: {e}")
+        finally:
+            # 设备侧清理
+            try:
+                subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'rm', '-f', device_xml],
+                               capture_output=True)
+            except Exception:
+                pass
+            # 本地临时 XML 可选清理
+            if remove_local_tmp_xml:
+                try:
+                    os.remove(local_xml)
+                except Exception:
+                    pass
+
+        # C) 前台包名
+        pkg = ADBController.get_foreground_package()
+
+        return {
+            'screenshot_base64': screenshot_b64,
+            'ui_xml': ui_xml_str,
+            'package': pkg
+        }
     @staticmethod
     def execute_command(command):
         # 执行ADB命令
@@ -90,6 +291,54 @@ class ADBController:
         subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'monkey', '-p', app_name, '-c', 'android.intent.category.LAUNCHER', '1'])
         logging.info(f"{app_name} 已重启")
         return None
+    @staticmethod
+    def open_app(package_name):
+        """
+        启动特定app (使用更健壮的 am start 命令)。
+        该方法首先尝试动态解析应用的主Activity，然后使用 `am start` 启动。
+        如果解析失败，会回退到使用 monkey 命令。
+        """
+        logging.info(f"尝试启动应用包: {package_name}")
+        try:
+            # 步骤1: 动态解析应用的主启动Activity
+            # 这个命令会返回 "package_name/full.activity.name"
+            # 使用 `cmd package` 兼容性更好
+            cmd_resolve = [
+                ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell',
+                'cmd', 'package', 'resolve-activity', '--brief', package_name
+            ]
+            result = subprocess.run(cmd_resolve, capture_output=True, text=True, check=True, timeout=5)
+            
+            # 取输出的最后一行，以防有警告信息
+            component_name = result.stdout.strip().splitlines()[-1]
+
+            if not component_name or '/' not in component_name:
+                # 如果解析失败，回退到原来的 monkey 命令
+                logging.warning(f"无法为 {package_name} 解析到主Activity。尝试使用 monkey 命令作为备用方案。")
+                cmd_fallback = [
+                    ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 
+                    'monkey', '-p', package_name, '-c', 'android.intent.category.LAUNCHER', '1'
+                ]
+                subprocess.run(cmd_fallback, check=True, timeout=5)
+            else:
+                # 步骤2: 使用 am start -n 精确启动解析到的组件
+                logging.info(f"解析到组件: {component_name}，正在启动...")
+                cmd_start = [
+                    ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 
+                    'am', 'start', '-n', component_name
+                ]
+                subprocess.run(cmd_start, check=True, timeout=5)
+            
+            logging.info(f"启动命令已成功发送给包: {package_name}")
+
+        except subprocess.CalledProcessError as e:
+            # 捕获命令执行失败的错误
+            error_message = e.stderr.strip() if e.stderr else e.stdout.strip()
+            logging.error(f"启动应用 {package_name} 失败: {error_message}")
+        except subprocess.TimeoutExpired:
+            logging.error(f"启动应用 {package_name} 超时。")
+        except Exception as e:
+            logging.error(f"启动应用时发生未知错误: {e}")
 
     # 新增操作方法
     @staticmethod
@@ -116,7 +365,69 @@ class ADBController:
         """输入文字"""
         # 使用ADB keyboard输入
         command = f"am broadcast -a ADB_INPUT_TEXT --es msg '{text}'"
+        # 安装输入法：https://android.bihe0832.com/doc/summary/samples.html
+        # command = f"am broadcast -a ZIXIE_ADB_INPUT_TEXT --es msg '{text}'"
         subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', command])
+    # @staticmethod
+    # def input_text(text):
+    #     """
+    #     使用 "紫雪ADB输入法" (ZIXIE_ADB_INPUT) 通过 Base64 广播方式输入文本。
+    #     这种方法能够可靠地处理中文、特殊符号和 Emoji。
+        
+    #     :param text: 要输入的任意文本。
+    #     """
+    #     logging.info(f"准备通过紫雪ADB输入法输入文本: '{text}'")
+
+    #     if not text:
+    #         logging.warning("尝试输入空文本，操作已跳过。")
+    #         return
+
+    #     try:
+    #         # 1. 将原始文本字符串编码为 UTF-8 字节序列
+    #         text_bytes = text.encode('utf-8')
+            
+    #         # 2. 对 UTF-8 字节序列进行 Base64 编码，得到 Base64 字节序列
+    #         base64_bytes = base64.b64encode(text_bytes)
+            
+    #         # 3. 将 Base64 字节序列解码为 ASCII 字符串，以便在命令行中使用
+    #         base64_string = base64_bytes.decode('ascii')
+
+    #         # 4. 构建 adb broadcast 命令
+    #         #    am broadcast -a ZIXIE_ADB_INPUT_BASE64 --es msg <base64_string>
+    #         #    我们不需要像shell脚本那样手动处理转义，因为base64字符串是安全的。
+    #         command = [
+    #             ADB_PATH,
+    #             '-s', CLOUD_DEVICE_IP_PORT,
+    #             'shell',
+    #             'am', 'broadcast',
+    #             '-a', 'ZIXIE_ADB_INPUT_BASE64',
+    #             '--es', 'msg', base64_string
+    #         ]
+
+    #         # 5. 执行命令
+    #         result = subprocess.run(
+    #             command,
+    #             capture_output=True,
+    #             check=True,  # 如果命令返回非0退出码，将抛出 CalledProcessError
+    #             timeout=10   # 设置一个10秒的超时
+    #         )
+            
+    #         # 广播命令成功时，通常会输出类似 "Broadcast completed: result=0" 的信息
+    #         # 我们可以检查 stderr 是否为空，或者 stdout 中是否包含成功信息
+    #         # 在大多数情况下，check=True 已经足够保证命令被 adb 成功派发
+    #         logging.info(f"成功发送广播以输入文本。ADB输出: {result.stdout.decode('utf-8', errors='ignore').strip()}")
+
+    #     except subprocess.CalledProcessError as e:
+    #         # 命令执行失败
+    #         error_output = e.stderr.decode('utf-8', errors='ignore').strip()
+    #         logging.error(f"使用紫雪ADB输入法失败，命令返回错误: {error_output}")
+    #         logging.error("请确认：1. 设备已安装并切换到紫雪ADB输入法。2. ADB连接正常。")
+    #     except subprocess.TimeoutExpired:
+    #         # 命令超时
+    #         logging.error("使用紫雪ADB输入法超时。设备可能无响应或输入法服务卡住。")
+    #     except Exception as e:
+    #         # 其他未知错误，如编码失败等
+    #         logging.error(f"使用紫雪ADB输入法时发生未知错误: {e}")
 
     @staticmethod
     def clear_text():
@@ -126,6 +437,7 @@ class ADBController:
         for _ in range(20):  # 假设要清除50次
             subprocess.run([ADB_PATH, '-s', CLOUD_DEVICE_IP_PORT, 'shell', 'input', 'keyevent', '67'])  # KEYCODE_DEL
 
+    
     @staticmethod
     def press_back():
         """模拟返回键"""
@@ -267,7 +579,29 @@ def get_screenshot():
         'message': 'Screenshot retrieved successfully',
         'data': f'data:image/png;base64,{encoded_string}'
     })
-
+@app.route('/get-ally',methods=['GET'])
+def get_ally():
+    # 获取ally树
+    ui_xml=ADBController.get_ui_hierarchy()
+    print(ui_xml)
+    return jsonify({
+        'status': 'success',
+        'message': 'Screenshot retrieved successfully',
+        'data': f'{ui_xml}'
+    })
+@app.route('/get-all', methods=['GET'])
+def capture_all():
+    """
+    一次返回：截图(Base64)、UI XML树、前台包名
+    """
+    data = ADBController.capture_all()
+    status = 'success' if any([data.get('screenshot_base64'), data.get('ui_xml')]) else 'failed'
+    msg = 'ok' if status == 'success' else 'capture failed'
+    return jsonify({
+        'status': status,
+        'message': msg,
+        'data': data
+    })
 @app.route('/restart-app',methods=['POST'])
 def restart_app():
     # 重启app
@@ -516,6 +850,47 @@ def save_annotation():
     # 保存数据到指定路径
     append_to_json_file(prompt,os.path.join(BASE_ANNO_PATH,f'{user_id}.json'))
     return jsonify({'status': 'success','data':None,'message':'成功保存标注并执行'})
+# user_id: 用户id----不同的用户分开保存;后期还可以进行统计
+# data: 用户标注的数据
+#   step_index
+#   screenshot_64
+@app.route('/save-annotation-new', methods=['POST'])
+def save_annotation_new():
+    data = request.get_json()
+    user_id=data.get('user_id','default')# 如果未填,则保存到default文件中
+    step_list=data.get('step_list')
+    cleaned_steps = []
+    for idx, step in enumerate(step_list):
+        if not isinstance(step, dict):
+            print(f"step[{idx}] is not an object")
+            continue
+        image_name=f"{uuid.uuid4()}.png"
+        image_base64=step.get('screenshot_64')
+        # 保存图片到指定路径
+        save_base64_to_png(image_base64,IMGS_PATH,image_name)
+
+        cleaned = {
+            "step_index": step.get('step_index'),
+            "actionForm": step.get("actionForm", {}),
+            "application": step.get("application", ""),
+            "application_name_cn": step.get("application_name_cn", ""),
+            "application_name_en": step.get("application_name_en", ""),
+            "extra_info": step.get("extra_info", {}),
+            # 新增字段：图片相对路径（如果保存成功）
+            "image_name": image_name 
+        }
+        cleaned_steps.append(cleaned)
+    instruction=data.get('instruction')
+    anno={
+        "task_id": f"{uuid.uuid4()}",
+        "instruction":instruction,
+        "applications":[],
+        "steps": cleaned_steps
+    }
+    # 保存数据到指定路径
+    append_to_json_file(anno,os.path.join(BASE_ANNO_PATH,f'{user_id}.json'))
+    return jsonify({'status': 'success','data':None,'message':'成功保存标注并执行'})
+
 
 @app.route('/execute-action', methods=['POST'])
 def execute_action():
@@ -552,6 +927,10 @@ def execute_action():
     elif action_info['action']=='text':
         ADBController.clear_text()
         ADBController.input_text(action_info['value'])
+    elif action_info['action']=='open_app':
+        package_name=action_info['package_name']
+        logging.info(f"包-{package_name} 启动")
+        ADBController.open_app(package_name)
     return jsonify({'status': 'success','data':None,'message':'执行成功'})
 
 @app.route('/test_get',methods=['GET'])
@@ -564,5 +943,12 @@ def test_post():
     })
 
 if __name__ == '__main__':
+    # 从配置中获取主机和端口
+    host = app.config['FLASK_HOST']
+    port = app.config['FLASK_PORT']
+    
+    # 确保主截图目录存在（原始代码中的逻辑）
     os.makedirs('screenshots', exist_ok=True)
-    app.run(debug=True,host='0.0.0.0', port=5001)
+    
+    logging.info(f"Flask 应用启动，监听地址 http://{host}:{port}")
+    app.run(host=host, port=port)

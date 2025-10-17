@@ -19,5 +19,7 @@ cd <repository-folder>
 Download the ADB keyboard.
 ```bash
 adb install adb_keyboard.apk
+adb -s <device_id> install app.apk
+adb -s emulator-5554 shell am broadcast -a ADB_INPUT_TEXT --es text '测试一下'
 
 Set it as the default settings.
