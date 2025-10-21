@@ -15,6 +15,7 @@ import uuid
 import sys
 from prompt_dispatcher import get_task_prompt
 from flask_cors import CORS # 1. 导入 CORS
+from openai import OpenAI
 # 1. 初始化 Flask 应用
 app = Flask(__name__)
 CORS(app) # 2. 将 app 实例传递给 CORS，完成初始化
@@ -55,12 +56,13 @@ BASE_ANNO_PATH = app.config['BASE_ANNO_PATH']
 BASE_SCREENSHOT_PATH = app.config['BASE_SCREENSHOT_PATH']
 IMGS_PATH = app.config['IMGS_PATH']
 API_URL = app.config['VLLM_API_URL']
-
-# 确保日志和数据目录存在
-os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
-os.makedirs(BASE_ANNO_PATH, exist_ok=True)
-os.makedirs(BASE_SCREENSHOT_PATH, exist_ok=True)
-os.makedirs(IMGS_PATH, exist_ok=True)
+# --- 新增的 OpenAI 配置 ---
+# 必填：您的 OpenAI API 密钥
+OPENAI_API_KEY = "sk-91uxtfPQ21NKvzQpQwaFuubNE2L5xLjlH2rcwOw49mBpByeJ" 
+# 可选：如果您使用代理或第三方服务 (如 one-api)，请设置此项
+# 如果直连 OpenAI，请保持为 None 或直接删除此行
+OPENAI_API_BASE = "https://a1.aizex.me/v1" 
+MODEL_NAME="gemini-2.5-pro-preview-06-05"
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -70,6 +72,26 @@ logging.basicConfig(
         logging.FileHandler(LOG_PATH, encoding='utf-8')  # 文件输出
     ]
 )
+
+openai_client = None
+if OPENAI_API_KEY:
+    try:
+        openai_client = OpenAI(
+            api_key=OPENAI_API_KEY,
+            base_url=OPENAI_API_BASE
+        )
+        logging.info("OpenAI 客户端初始化成功。")
+    except Exception as e:
+        logging.error(f"OpenAI 客户端初始化失败: {e}")
+else:
+    logging.warning("在 config.py 中未找到 OPENAI_API_KEY。/openai_infer 接口将不可用。")
+
+# 确保日志和数据目录存在
+os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
+os.makedirs(BASE_ANNO_PATH, exist_ok=True)
+os.makedirs(BASE_SCREENSHOT_PATH, exist_ok=True)
+os.makedirs(IMGS_PATH, exist_ok=True)
+
 # ADB操作
 class ADBController:
     @staticmethod
@@ -829,6 +851,7 @@ def save_annotation():
     task_type=data.get('task_type','')
     user_id=data.get('user_id','default')# 如果未填,则保存到default文件中
     image_base64=data['image_base64']
+    
     query=fill_templete_by_task(slot_info=slot_info,app_name=app_name,task_type=task_type)
     action=format_action(action_data=action_info)
     image_name=f"{uuid.uuid4()}.png"
@@ -870,6 +893,7 @@ def save_annotation_new():
         image_base64=step.get('screenshot_64')
         # 保存图片到指定路径
         save_base64_to_png(image_base64,IMGS_PATH,image_name)
+        image_xml=step.get('screenshot_xml')
 
         cleaned = {
             "step_index": step.get('step_index'),
@@ -879,7 +903,8 @@ def save_annotation_new():
             "application_name_en": step.get("application_name_en", ""),
             "extra_info": step.get("extra_info", {}),
             # 新增字段：图片相对路径（如果保存成功）
-            "image_name": image_name 
+            "image_name": image_name ,
+            "image_xml":image_xml
         }
         cleaned_steps.append(cleaned)
     instruction=data.get('instruction')
@@ -943,6 +968,107 @@ def test_post():
     return jsonify({
         'test':'Hello, World!'
     })
+
+
+# --- 新增：通用 OpenAI API 调用函数 ---
+def call_openai_api( messages):
+    """
+    一个独立的、通用的函数，用于调用 OpenAI Chat Completions API。
+
+    Args:
+        messages (dict): 符合 OpenAI API 规范的请求体字典。
+
+    Returns:
+        tuple: 一个包含两个元素的元组 (is_success, result)。
+               - 如果成功, (True, response_dict)。
+               - 如果失败, (False, error_message_string)。
+    """
+    payload={
+        "model":MODEL_NAME,
+        "messages":messages,
+        "max_tokens":1000
+    }
+    
+    try:
+        logging.info(f"向 OpenAI 发送请求, 模型: {payload.get('model')}")
+        
+        # 使用 ** 将字典解包为关键字参数，直接传递给 `create` 方法
+        response = openai_client.chat.completions.create(**payload)
+        
+        # 将 OpenAI 的 Pydantic 模型对象转换为字典
+        response_dict = response.choices[0].message.content
+        
+        logging.info("OpenAI API 调用成功。")
+        logging.debug(f"OpenAI 响应: {response_dict}")
+        
+        return True, response_dict
+
+    except Exception as e:
+        # 捕获所有可能的异常 (API认证失败, 网络问题, 无效请求等)
+        error_message = str(e)
+        logging.error(f"OpenAI API 调用失败: {error_message}")
+        return False, error_message
+
+@app.route('/openai_infer', methods=['POST'])
+def openai_infer():
+    """
+    处理 /openai_infer POST 请求的 Flask 路由。
+    它作为 web 接口，调用核心的 `call_openai_api` 函数。
+    """
+    # 1. 检查服务器端配置
+    if not openai_client:
+        return jsonify({
+            'status': 'error',
+            'message': 'OpenAI client is not configured on the server. Please check OPENAI_API_KEY in config.py.'
+        }), 500
+    prompt('testttt')
+    # 2. 检查客户端请求
+    prompt=[
+        {
+            'role':'system',
+            'content': ""
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                "type": "image_url",
+                "image_url": {
+                # 需要注意：传入Base64编码前需要增加前缀 data:image/{图片格式};base64,{Base64编码}：
+                # PNG图片："url":  f"data:image/png;base64,{base64_image}"
+                # JPEG图片："url":  f"data:image/jpeg;base64,{base64_image}"
+                # WEBP图片："url":  f"data:image/webp;base64,{base64_image}"
+                    "url":  "{screenshot_base64}"
+                },         
+                },
+                {
+                "type": "text",
+                "text": "Analyze the UI elements in the figure",
+                },
+            ],
+        }
+    ]
+    prompt_json = request.json['prompt_json']
+    if not prompt_json:
+        return jsonify({'status': 'error', 'message': 'Invalid or empty JSON payload.'}), 400
+
+    # 3. 调用核心逻辑函数
+    is_success, result = call_openai_api(messages=prompt_json)
+    logging.info(f"生成任务---{is_success}---{result}")
+    # 4. 根据结果构造响应
+    if is_success:
+        return jsonify({
+            'status': 'success',
+            'data': result,  # result 在这里是 response_dict
+            'message': 'OpenAI API call successful.'
+        })
+    else:
+        # result 在这里是 error_message_string
+        return jsonify({
+            'status': 'error',
+            'message': f"An error occurred with the OpenAI API: {result}"
+        }), 500
+
 
 if __name__ == '__main__':
     # 从配置中获取主机和端口
